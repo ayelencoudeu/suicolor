@@ -1,0 +1,838 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container-fluid {
+    padding-right: 0; 
+    padding-left: 0; 
+    margin-right: 0;
+    margin-left:0; 
+}
+.container{
+  margin-right: auto;
+  margin-left:auto;  
+}
+
+/* Estilos peMenu */
+.container.nav.navbar{
+  padding:0px; 
+  margin:0px; 
+}
+
+.navbar{ 
+  margin-bottom:0px;
+}
+.pre-header  {
+  height:30px;
+  text-align: center;
+}
+.pre-header a{
+  display: inline-block;
+  vertical-align:middle;
+}
+/*------------Estilos Menu----------------*/
+header{
+    margin: 10px 0;
+    padding: 5px 0;
+  }
+.logo{
+  display: inline-block;
+}
+
+a.menu{
+  font-size: 1em;
+  color:#333333;
+}
+a.sub-menu{
+  color:#333333;
+  margin: 10px 0;
+}
+
+/*--contenedor sliders--*/
+
+/* Estilos redes sociales */
+.social {
+  position: fixed; 
+  left:0px; 
+  top: 200px; 
+  z-index: 2000;
+}
+ 
+  .social ul {
+    list-style: none;
+  }
+ 
+  .social ul li a {
+    font-size: 1.5em;
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+  }
+ 
+  .social ul li .icon-facebook {background:#3b5998;} 
+  .social ul li .icon-instagram {background: #a2007b;}
+  .social ul li .icon-youtube {background: #d95232;}
+  
+  .social ul li a:hover {
+    background: #9d9d9c; 
+    padding: 10px 30px; 
+  }
+
+/* Estilos tituloPrincipal */
+
+
+.tituloPrincipal {
+  min-width: 330px;
+  background-color:#b40000;
+  height:35px;
+}
+
+.tituloPrincipal h1{
+  padding-top:10px;
+  font-family:"Merriweather Sans", Arial, Sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding-bottom:5px;
+  color:#fff;
+}
+
+@media only screen and (max-width: 425px){
+  header{
+    margin: 10px 0;
+  }
+
+  .logo {
+  width: 50%;
+  display: inline-block;
+  padding: 5px;
+  }
+
+  .tituloPrincipal{
+    height:45px;
+  }
+  
+  .tituloPrincipal h1{
+    vertical-align: middle;
+   font-size: 1em;
+
+  }
+  span.barra.icon-bar {
+    display: block;
+    width: 30px;
+    height: 1px;
+    border: solid red;
+   
+  }
+
+  form .buscar{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+  .logo{
+    float:left;
+  }
+  .menu-general{
+    padding-left:0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    float:right;
+    display: inline-block;
+    width: 70%;
+  }
+  
+  .menu-general ul.menu-flex {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+  }
+  .menu-general ul li a{
+    font-size:0.8em;
+  }
+  
+  form.form-buscar{
+      padding-left:0;
+  }
+  
+  .tituloPrincipal{
+    height: 55px;
+  } 
+    
+  .tituloPrincipal h1{
+  padding-top: 15px;
+   font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .logo{
+    float:none;
+    display: inline-block;
+  }
+  .menu-general{
+    padding-left:0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display:inline-block;
+    width:75%;
+  }
+  
+  .menu-general ul.menu-flex {
+    padding-left:0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+     width: 67%;
+    display: inline-block;
+  
+  }
+
+   .menu-general ul li a{
+    font-size:0.85em;
+  }
+  
+  form.form-buscar{
+      padding-left:0;
+  }
+  
+  
+  .tituloPrincipal{
+    height:75px;
+  }
+  .tituloPrincipal h1{
+    padding-top:20px;
+   font-size: 2em;
+  }
+}
+
+/* Estilos Unidades de Negocio */
+
+.unidades{
+  margin-top: 10px;
+}
+.lin {
+  margin-bottom: 10px;
+  }
+
+.arq{
+  background-color:#8ea01e;
+  }
+
+.arq, .rev, .ind, .maq, h2{
+  color:#fff;
+  font-size:1em;
+  font-family: "Merriweather Sans", Arial, Sans-serif;
+  font-weight:400;
+  text-align: center;
+  display:inline-block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  }
+
+.rev{
+  background-color:#d16106;
+  }
+
+.ind{
+  background-color:#d42e72;
+  }
+
+.maq{
+  background-color:#036794;
+  }
+
+@media only screen and (min-width: 426px){
+  .unidad {
+  margin-top:20px;
+  }
+  .arq, .rev, .ind, .maq, h2{
+  margin-bottom: 15px;
+  font-size:1em;
+  }
+}
+@media only screen and (min-width: 1440px){
+  .unidad {
+  margin-top: 30px;
+  }
+}
+
+/* Estilos destacados */
+
+.destacados{
+  margin-top: 30px;
+  background: url('../img/fondo_prod_ind_web.jpg');
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:40px 0;
+  }
+
+.destacados_titulo h3{
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 300;
+  font-size:4em;
+  margin-bottom:70px;
+  }
+
+
+.planes{
+  background-color: rgba(198,198,198,0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+
+.plan{
+  background-color: #fff;
+  font-family: "Open Sans", Arial, Sans-serif;
+  text-align: center;
+  -webkit-box-shadow:0px 0px 15px 0px rgba(0,0,0,0.35);
+  box-shadow:0px 0px 15px 0px rgba(0,0,0,0.35);
+  }
+.plan img{
+  margin-top: 15px;
+  }
+.plan .nombre{
+  font-size: 16px;
+  font-weight: 600px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color:#000;
+  }
+.plan .descripcion{
+  font-size: 12px;
+  font-weight: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:#575756;
+}
+  .plan .precio {
+    font-size: 38px;
+    font-weight: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#575756;
+  }
+
+.plan .btn {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 70%;
+  padding: 10px 0;
+  text-align: center;
+  display:inline-block;
+  border-radius:80px;
+}
+.plan.arq .btn  {
+  color:#8ea01e;
+  border:solid 2px #8ea01e;
+}
+
+.plan.arq .btn:hover {
+  background-color:#8ea01e;
+  color:#fff;
+}
+
+.plan.rev .btn  {
+  color:#d16106;
+  border:solid 2px #d16106;
+}
+
+.plan.rev .btn:hover {
+  background-color:#d16106;
+  color:#fff;
+}
+
+.plan.ind .btn  {
+  color:#d42e72;
+  border:solid 2px #d42e72;
+}
+
+.plan.ind .btn:hover {
+  background-color:#d42e72;
+  color:#fff;
+}
+
+.plan.maq .btn  {
+  color:#036794;
+  border:solid 2px #036794;
+}
+
+.plan.maq .btn:hover {
+  background-color:#036794;
+  color:#fff;
+}
+
+/* Estilos Conoce nuestros locales*/
+    
+.local{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+  }
+.local img{
+  margin-top: 5px;
+  width: 100%;
+}
+.local h3{
+  font-size: 3em;
+  font-family: "Merriweather Sans", Arial, Sans-serif;
+  font-weight:700;
+  color:red;
+  text-align: center;
+}
+.local p{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight:400;
+  text-align: center;
+}
+
+/* Estilos curso */
+
+.jumbotron {
+    height:320px;
+    padding-top: 10px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    background: url('../img/curso1.jpg');
+    background-position: right 0;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;   
+}
+.curso_texto{
+  margin-top: 10px;
+}
+
+.curso_texto h2{
+  font-size: 3em;
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight:400;
+  color:red;
+  text-align: center;
+}
+.curso_texto p{
+  margin-top: 10px;
+  font-size: 1em;
+  line-height:1.5em;
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 400;
+  background-color: rgba(247,247,247,0.7);
+  padding:5px;
+}
+.jumbotron .form-group{
+  background-color:transparent;
+}
+.jumbotron .form-group input{
+  width: 60%;
+  float:left;
+  margin-right: 5px;
+}
+
+footer .direccion{
+  background-color: #3c4045;
+  padding: 30px 0;
+  color:#fff;
+}
+
+footer .direccion .titulo{
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 300;
+  margin-bottom: 30px;
+  }
+
+  footer .direccion .direccion_local, .telefono, .correo{
+    text-align: center;
+  font-size: 1em;
+  line-height: 2.5em;
+  font-weight: 300;
+  margin-bottom:10px;
+  }
+
+footer .red_social{
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+footer .red_social a{
+    padding: 10px;
+    display: inline-block;
+    margin:0 20px;
+    font-size: 3em;
+    color:#3c4045;
+    border-radius: 100px;
+    
+  }
+
+
+ 
+ /*Estilos hoja productos*/ 
+
+
+
+.btn.btn-danger.texto{
+  text-align: right;
+}
+
+.btn.btn-danger.flecha{
+  text-align: left;
+}
+/* seccion Productos*/
+
+.tienda_producto h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:red;
+  font-size: 1.2em;
+  
+}
+
+.tienda_producto a{
+  color:#000;
+  font-size: 1em;
+  
+}
+
+.tienda_producto .muestra_producto{
+    height: 100%;
+}
+
+.tienda_producto .muestra_producto img{
+  height: 100%;
+  width: 100%;
+}
+.tienda_producto .muestra_producto h3{
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom:5px; 
+}
+.tienda_producto .muestra_producto p{
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.tienda_producto .muestra_producto h4{
+  font-size: 2em;
+  color:red;
+  text-align: center;
+}
+
+.tienda_producto .muestra_producto a{
+  
+  margin-top:5px;
+  color:#fff;
+
+}
+
+/*----------vista productos-----------*/
+
+.productos .cont-producto .titulo h2 {
+    color:red;
+    font-size: 2em;
+}
+
+.productos .cont-producto .caja-producto .producto img {
+  margin-top: 10px;
+}
+
+.productos .cont-producto .caja-producto .producto h3 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.productos .cont-producto .caja-producto .producto p {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color:#3c4045;
+}
+
+.productos .cont-producto .caja-producto .producto .btn-producto{
+  width: 100%;
+}
+
+/*-----------paginacion-------------*/
+
+.productos .cont-producto .paginacion {
+  position: relative;
+  text-align: center;
+}
+
+/*-----------modal-------------*/
+
+.modalImagen{
+  padding: 10px 0;
+  display: flex;
+  justify-content:center;
+}
+
+
+.textomodal .productoNombre{
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-weight: 400;
+  color:#3c4045;
+}
+
+.textomodal h4.productoNombre{
+  font-size: 1.3em;
+  font-weight: 400;
+  color:#3c4045;
+}
+
+
+.textomodal .descripModal{
+  width: 90%;
+  margin-bottom:20px;
+  }
+.textomodal p.descripModal{
+  font-size: 0.9em;
+  line-height: 1.8em;
+  color:#3c4045;
+}
+
+.textomodal .litrosModal,
+.textomodal .colorModal,
+.textomodal .tipoModal{
+  width: 30%;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  color:#3c4045;
+}
+
+.textomodal .productoPrecio{
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  font-size: 1.6em;
+  padding: 10px 0;
+  font-weight: 400;
+  border: 1px solid #4d4d4d;
+  border-radius: 10px;
+  background-color:#4d4d4d;
+  color:#fff;
+  text-align: center;
+}
+
+.form-cantidad{
+  margin-top: 20px;
+  margin-left: 10%;
+  padding: 0 10%;
+}
+
+.modalPestaneas{
+  width: 90%;
+  margin: auto auto;
+}
+
+.modalPestaneas h4{
+  margin: 10px 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  color:#4d4d4d;
+
+}
+
+.modalPestaneas p{
+  width: 80%;
+  margin-left: 5%;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color:#4d4d4d;
+}
+
+@media only screen and (max-width: 768px){
+  .modalImagen{
+  padding: 10px 0;
+  display: flex;
+  justify-content:flex-start;
+
+  }
+  .modalImagen img{
+  vertical-align: middle;
+  }
+
+  .textomodal .productoNombre{
+  margin-left: 20px;
+  font-size: 1.1em;
+  }
+
+  .textomodal .descripModal{
+  margin-left: 20px;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  }
+  .textomodal .litrosModal,
+  .textomodal .colorModal,
+  .textomodal .tipoModal{
+  width: 100%;
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-align: left;
+  }
+  .form-cantidad{
+    
+    margin-top:5px;
+    
+  }
+  .form-cantidad label{
+    display: block; 
+    padding:10px 0;
+  }
+  
+  .form-cantidad select{
+    
+    width: 60%; 
+    display: inline-block; 
+  }
+
+  .modalPestaneas p{
+  font-size: 0.9em;
+  line-height: 1.4em;
+ 
+  }
+
+}
+
+@media only screen and (max-width: 425px){
+  .modalImagen{
+   justify-content:center;
+  }
+  .textomodal .productoNombre{
+  margin: 5% 20%;
+  }
+  .form-cantidad{
+    border:solid #fff 1px;
+    margin-left: 0;
+    padding:0;
+  }
+  .form-cantidad label{
+    padding:10px 0;
+  }
+  
+  .form-cantidad select{
+    width: 60%; 
+    display: inline-block; 
+  }
+  
+  .modalPestaneas ul li a{
+    font-size: 0.9em;
+  }
+
+}
+
+/*----------------Formulario de registro---------------*/
+.registro .container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.registro .container h2{
+  color:#5d5d5d;
+  font-size:2em;
+  font-family: "Merriweather Sans", Arial, Sans-serif;
+  font-weight:400;
+  display:inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.registro .container .campo{
+  margin-bottom: 20px;
+}
+
+.registro .container .campo input.form-control {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+    border-bottom: solid #ccc 2px;
+    border-radius:0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.registro .container hr {
+  margin-bottom:10px;
+  width: 50%;
+  border: solid red 1px;
+
+}
+
+.registro .container .facturacion{
+  margin-top: 30px;
+}
